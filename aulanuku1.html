@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Pemerintah Provinsi Maluku Utara Sekretariat Daerah Biro Umum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="organisasi.html">ORGANISASI</a></li>
+                <li><a href="layanan.html">LAYANAN</a></li>
+                <li><a href="">KONTAK</a></li>
+                <li><a href="">INFORMASI</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>AULA NUKU</h1>
+    
+    </section>
+    <section>
+        <div class="row">
+        <h3>Daftar Riwayat Peminjaman Aula Nuku</h3></div><br>
+<table class="tableaula">
+    <thead>
+        <th>No</th>
+        <th>Instansi</th>
+        <th>Tanggal</th>
+        <th>Keterangan</th>
+        <th>Status</th>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <td data-label="No">1</td>
+            <td data-label="Instansi">Dinas Koperasi dan UMKM</td>
+            <td data-label="Tanggal">27 Februari</td>
+            <td data-label="Keterangan">Diklat PIM</td>
+            <td data-label="Status">Berakhir</td>
+        </tr>
+        <tr>
+            <td data-label="No">2</td>
+            <td data-label="Instansi">Dinas Pertanian</td>
+            <td data-label="Tanggal">28 Februari</td>
+            <td data-label="Keterangan">Diklat PIM</td>
+            <td data-label="Status">Sedang Berlangsung</td>
+        </tr>
+        <tr>
+            <td data-label="No">3</td>
+            <td data-label="Instansi">Dinas Kehutanan</td>
+            <td data-label="Tanggal">1 Maret</td>
+            <td data-label="Keterangan">Diklat PIM</td>
+            <td data-label="Status">Dipesan</td>
+        </tr>
+        
+    
+    </tbody>
+    </table>
+    <div class="pesan-box">
+        <h3>Hubungi Kami</h3>
+        <form class="pesan-form">
+            <input type="text" placeholder="Nama">
+            <input type="instansi" placeholder="Instansi">
+            <input type="email" placeholder="E-mail">
+            <input type="hp" placeholder="Nomor HP">
+            <textarea rows="5" placeholder="Keterangan"></textarea>
+            <p>Surat Pinjam Pakai Aula Nuku:</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
+
+        </form>
+    </div>
+    </section>
+    
+<!------Footer------->
+<section class="footer">
+    <a href="index.html"><img src="logo.png"></a>
+    <h5>Jln. Lintas Halmahera, Gosale Puncak No.1</h5>
+    <h5>No Telepon 021675234</h5>
+    <h5>No Fax 021675234</h5>
+    <h5>E-mail : birosetdamalut@gmail.com</h5>
+    <h5>Instagram : birosetda_malut</h5>
+    
+    
+</section>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";    
+    }
+</script>
+
+</body>
+</html>
