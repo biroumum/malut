@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Pemerintah Provinsi Maluku Utara Sekretariat Daerah Biro Umum</title>
+    <link rel="icon" href="gambar/logourl.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="gambar/logo.png" class="logo" id="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="organisasi.html">ORGANISASI</a></li>
+                <li><a href="layanan.html">LAYANAN</a></li>
+                <li><a href="kontak.html">KONTAK</a></li>
+                <li><a href="informasi.html">INFORMASI</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    </section>
+    
+    <!------ORGANISASI----->
+<section id="albums">
+  <h2>Foto dan Video</h2>
+    <hr>
+
+  <div class="album-slider">
+    <div class="album">
+      <h3>Suasana Apel Gabungan Ruang Lingkup Pemprov Maluku Utara</h3>
+        <h5>6 Maret 2023</h5>
+      <div class="media-container">
+        <div class="media-item">
+          <img src="album1/image1.jpg" alt="Image 1">
+        </div>
+        <div class="media-item">
+          <img src="album1/image2.jpg" alt="Image 2">
+        </div>
+          <div class="media-item">
+          <img src="album1/image3.jpg" alt="Image 3">
+        </div>
+        <div class="media-item">
+          <video src="album1/video.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+
+    <div class="album">
+      <h3>View Kantor Gubernur Maluku Utara</h3>
+        <h5>26 February 2023</h5>
+      <div class="media-container">
+        <div class="media-item">
+          <img src="album2/image1.jpg" alt="Image 1">
+        </div>
+        <div class="media-item">
+          <img src="album2/image2.jpg" alt="Image 2">
+        </div>
+        <div class="media-item">
+          <img src="album2/image3.jpg" alt="Image 3">
+        </div>
+        <div class="media-item">
+          <video src="album2/video.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- add more albums as needed -->
+  </div>
+
+  <div class="slider-nav">
+    <button class="prev-slide">&lt;</button>
+    <button class="next-slide">&gt;</button>
+  </div>
+</section>
+    
+<!------Footer------->
+<section class="footer">
+  <div class="container">
+    <div class="left-section">
+      <a href="index.html"><img src="gambar/logo.png" class="logobawah"></a>
+      <h5>Jln. Lintas Halmahera, Gosale Puncak No.1</h5>
+      <h5>(021) 675234</h5>
+      <h5>(021) 675234</h5>
+        <a href="malutbiroumum@gmail.com" class="email-link">
+        <h5>malutbiroumum@gmail.com</h5></a>
+    </div>
+    <div class="right-section">
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.470816540336!2d127.60778161426694!3d0.7562127634069163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x329cbf15a96c4a05%3A0x5f5bfe05c99be84f!2sKantor%20Gubernur%20Maluku%20Utara!5e0!3m2!1sen!2sid!4v1677728211816!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="copyright">
+    <div class="copyright">
+        <section class="social-media">
+  <div class="social-media-icons">
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div></section>
+			<p>&copy; Hak Cipta 2023 <strong>Biro Umum</strong>. All Rights Reserved</p>
+        <h5>Designed by Aravent</h5>
+		</div></section>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";    
+    }
+</script>
+
+</body>
+</html>
