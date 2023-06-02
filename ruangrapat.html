@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Pemerintah Provinsi Maluku Utara Sekretariat Daerah Biro Umum</title>
+    <link rel="icon" href="gambar/logourl.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="gambar/logoputih.png" class="logo" id="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="organisasi.html">ORGANISASI</a></li>
+                <li><a href="layanan.html">LAYANAN</a></li>
+                <li><a href="kontak.html">KONTAK</a></li>
+                <li><a href="informasi.html">INFORMASI</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+        <div class="row">
+             <h3>Daftar Riwayat Peminjaman Ruang Rapat</h3>
+       </div>
+<div id="item-container"><table class="tableaula">
+    <thead>
+        <th>No</th>
+        <th>Instansi</th>
+        <th>Tanggal</th>
+        <th>Keterangan</th>
+        <th>Status</th>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td data-label="No">1</td>
+            <td data-label="Instansi">Dinas Koperasi dan UMKM</td>
+            <td data-label="Tanggal">27 Februari</td>
+            <td data-label="Keterangan">Diklat PIM</td>
+            <td data-label="Status">Berakhir</td>
+        </tr>
+        <tr>
+            <td data-label="No">2</td>
+            <td data-label="Instansi">Dinas Pertanian</td>
+            <td data-label="Tanggal">28 Februari</td>
+            <td data-label="Keterangan">Diklat PIM</td>
+            <td data-label="Status">Sedang Berlangsung</td>
+        </tr>
+        <tr>
+            <td data-label="No">3</td>
+            <td data-label="Instansi">Dinas Kehutanan</td>
+            <td data-label="Tanggal">1 Maret</td>
+            <td data-label="Keterangan">Diklat PIM</td>
+            <td data-label="Status">Dipesan</td>
+        </tr>
+                <tr>
+            <td data-label="No">4</td>
+            <td data-label="Instansi">Dinas Kehutanan</td>
+            <td data-label="Tanggal">1 Maret</td>
+            <td data-label="Keterangan">Diklat PIM</td>
+            <td data-label="Status">Dipesan</td>
+        </tr>
+                <tr>
+            <td data-label="No">5</td>
+            <td data-label="Instansi">Dinas Kehutanan</td>
+            <td data-label="Tanggal">1 Maret</td>
+            <td data-label="Keterangan">Diklat PIM</td>
+            <td data-label="Status">Dipesan</td>
+        </tr>
+        
+    
+    </tbody>
+    </table></div>
+
+<script src="https://unpkg.com/@uploadcare/blocks@0.17.1/web/file-uploader-regular.min.js" type="module"></script>
+<link href="https://unpkg.com/@uploadcare/blocks@0.17.1/web/file-uploader-regular.min.css" rel="stylesheet">
+<section class="zoom">
+    <style>
+		.zoomer {
+			width: 30%;
+			max-width: 800px;
+			margin: 0 auto;
+			text-align: center;
+            margin-top: 10vh;
+		}
+
+		.zoomable {
+			position: relative;
+			display: inline-block;
+			cursor: zoom-in;
+			transition: transform 0.5s ease;
+			max-width: 100%;
+			max-height: 100%;
+			overflow: hidden;
+		}
+
+		.zoomable img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.zoomable.zoomed {
+			cursor: zoom-out;
+			transform: scale(2);
+		}
+
+		.fade-in {
+			animation: fadein 1s;
+		}
+
+		@keyframes fadein {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+        @media (max-width: 480px) {
+	.zoomer {
+		width: 80%;
+	}
+
+	.zoomable {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+        pointer-events: none;
+	}
+}
+	</style>
+    <div class="zoomer">
+		<div class="zoomable">
+			<img id="main-photo" src="berita/berita1.jpg" alt="Photo 1" class="fade-in" />
+		</div>
+	</div>
+
+	<script>
+		var photos = [
+			"berita/berita1.jpg",
+			"berita/berita2.jpg",
+			"berita/berita3.jpg"
+		];
+		var current = 0;
+		var max = photos.length - 1;
+		var mainPhoto = document.getElementById('main-photo');
+		var zoomable = document.querySelector('.zoomable');
+
+		setInterval(function() {
+			current = (current == max) ? 0 : current + 1;
+			mainPhoto.classList.remove('fade-in');
+			zoomable.classList.remove('zoomed');
+			setTimeout(function() {
+				mainPhoto.src = photos[current];
+				mainPhoto.classList.add('fade-in');
+			}, 500);
+		}, 3000);
+
+		zoomable.addEventListener('click', function() {
+			zoomable.classList.toggle('zoomed');
+		});
+	</script>
+</section>
+
+
+    <div class="pesan-box">
+        <h3>Hubungi Kami</h3>
+<form class="pesan-form" action="https://formspree.io/f/xjvdrrny" method="POST">
+  <input type="text" name="nama" placeholder="Nama" required>
+  <input type="text" name="instansi" placeholder="Instansi" required>
+  <input type="email" name="_replyto" placeholder="E-mail" required>
+  <input type="text" name="hp" placeholder="Nomor HP" required>
+  <textarea name="keterangan" rows="5" placeholder="Keterangan"></textarea>
+  <p>Surat Pinjam Pakai Ruang Rapat <small>(Dalam Bentuk JPG atau PNG)</small>:</p>
+    <input type="hidden" role="uploadcare-uploader" name="file" data-public-key="e55d206c61801df3c70e" data-images-only>
+  <input type="submit" value="Kirim">
+</form>
+
+<script src="https://ucarecdn.com/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script>
+    </div>
+<!------Footer------->
+<section class="footer">
+  <div class="container">
+    <div class="left-section">
+      <a href="index.html"><img src="gambar/logoputih.png" class="logobawah"></a>
+      <h5>Jln. Lintas Halmahera, Gosale Puncak No.1</h5>
+      <h5>(021) 675234</h5>
+      <h5>(021) 675234</h5>
+        <a href="malutbiroumum@gmail.com" class="email-link">
+        <h5>malutbiroumum@gmail.com</h5></a>
+    </div>
+    <div class="right-section">
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.470816540336!2d127.60778161426694!3d0.7562127634069163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x329cbf15a96c4a05%3A0x5f5bfe05c99be84f!2sKantor%20Gubernur%20Maluku%20Utara!5e0!3m2!1sen!2sid!4v1677728211816!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="copyright">
+    <div class="copyright">
+        <section class="social-media">
+  <div class="social-media-icons">
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div></section>
+			<p>&copy; Hak Cipta 2023 <strong>Biro Umum</strong>. All Rights Reserved</p>
+        <h5>Designed by Aravent</h5>
+		</div></section>
+
+<!------JavaScript for Toggle Menu------>
+
+<script>
+  UPLOADCARE_PUBLIC_KEY = 'e55d206c61801df3c70e';
+</script>
+<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";    
+    }
+</script>
+
+
+</body>
+</html>
