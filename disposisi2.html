@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-102GY6Z7TW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-102GY6Z7TW');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Pemerintah Provinsi Maluku Utara Sekretariat Daerah Biro Umum</title>
+    <link rel="icon" href="gambar/logourl.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        main {
+            padding: 2em;
+        }
+    
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        .book {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .book-image {
+            max-width: 20%;
+            height: auto;
+            border-radius: 5px;
+        }
+        /* Add this to your existing styles or modify as needed */
+    .download-button {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #3498db; /* Change the color as desired */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+        background-color: #2980b9; /* Change the hover color as desired */
+    }
+
+    /* Additional styles for book details */
+    .book-details {
+        padding: 1em;
+    }
+    .search-bar {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #searchInput {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #searchButton {
+            padding: 10px;
+            margin-left: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    @media only screen and (max-width: 700px) {
+        .book-container {
+            display: block;
+            justify-content: space-around;
+        }
+
+        .book {
+            width: 100%; /* Set to full width for single column */
+        }
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="gambar/logoputih.png" class="logo" id="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="organisasi.html">ORGANISASI</a></li>
+                    <li><a href="layanan.html">LAYANAN</a></li>
+                    <li><a href="kontak.html">KONTAK</a></li>
+                    <li><a href="informasi.html">INFORMASI</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+<br>
+    <header>
+        <h2>PENGELOLAAN KEARSIPAN DAN 
+        <br>TATA PERSURATAN <span style="color: #d21312;">BIRO UMUM</span> SEKRETARIAT DAERAH PROV MALUT</h2>
+    </header>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for Archives...">
+        <button id="searchButton" onclick="searchBooks()">Search</button>
+    </div>
+
+    <main id="booksContainer">
+        <!-- JavaScript will dynamically populate this container -->
+
+
+    <script>
+        // Dummy data for testing. Replace this with your actual book data.
+        const booksData = [
+        { title: "PERATURAN BKN NO. 7 TAHUN 2017", pdfLink: "https://biroumum.github.io/malut/surat/peraturan-BKN-NO.-7-Tahun-2021.pdf", image: "srtimage/bkn7.jpg", author: "BKN", genre: "26 Juli 2021", description: "Menimbang : a. bahwa dengan ditetapkannya Peraturan Pemerintah Nomor 17 Tahun 2020 tentang Perubahan atas Peraturan Pemerintah Nomor 11 Tahun 2017 tentang Manajemen Pegawai Negeri Sipil, untuk memberikan perlindungan dan kelancaran dalam menjalankan" },
+            // Add more book data here...
+        ];
+
+    </script>
+        </main>
+            <div class="pagination" id="pagination">
+                <a href="#" class="prev" id="prev">Prev</a>
+                <a href="disposisi1.html" class="page active">1</a>
+                <a href="disposisi2.html" class="page">2</a>
+                <a href="#" class="next" id="next">Next</a>
+            </div>
+            <script src="scriptdisposisi.js"></script>
+
+    <!------Footer------->
+    <section class="footer">
+        <div class="container">
+            <div class="left-section">
+                <a href="index.html"><img src="gambar/logoputih.png" class="logobawah"></a>
+                <h5>Jln. Lintas Halmahera, Gosale Puncak No.1</h5>
+                <h5>(021) 675234</h5>
+                <h5>(021) 675234</h5>
+                <a href="malutbiroumum@gmail.com" class="email-link">
+                    <h5>malutbiroumum@gmail.com</h5>
+                </a>
+            </div>
+            <div class="right-section">
+                <div class="map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.470816540336!2d127.60778161426694!3d0.7562127634069163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x329cbf15a96c4a05%3A0x5f5bfe05c99be84f!2sKantor%20Gubernur%20Maluku%20Utara!5e0!3m2!1sen!2sid!4v1677728211816!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copyright">
+        <div class="copyright">
+            <section class="social-media">
+                <div class="social-media-icons">
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </section>
+            <p>&copy; Hak Cipta 2023 <strong>Biro Umum</strong>. All Rights Reserved</p>
+            <h5>Designed by Aravent</h5>
+        </div>
+    </section>
+
+    <!------JavaScript for Toggle Menu------>
+
+    <script>
+        UPLOADCARE_PUBLIC_KEY = 'e55d206c61801df3c70e';
+    </script>
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
