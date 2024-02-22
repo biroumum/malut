@@ -113,6 +113,23 @@ nav .fa{
     visibility: visible;
     opacity: 1;   
 }
+
+/*-----------surat-------*/
+.book p{
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+.book-image {
+  max-width: 100%;  /* Set the maximum width to 100% of the container */
+  height: auto;     /* Maintain the aspect ratio */
+  border-radius: 5px;
+}
+
 /*------------------------- layanan ------*/
 
 .layanan{
