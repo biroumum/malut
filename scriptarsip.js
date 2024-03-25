@@ -24,12 +24,12 @@ return new Promise((resolve, reject) => {
 });
 }
 function loadBooksData() {
-  const disposisi1DataPromise = fetchBooksData('disposisi1.html');
-  const disposisi2DataPromise = fetchBooksData('disposisi2.html');
+  const arsip1DataPromise = fetchBooksData('arsip1.html');
+  const arsip2DataPromise = fetchBooksData('arsip2.html');
 
-  Promise.all([disposisi1DataPromise, disposisi2DataPromise])
-    .then(([disposisi1Data, disposisi2Data]) => {
-      booksData = [...disposisi1Data, ...disposisi2Data];
+  Promise.all([arsip1DataPromise, arsip2DataPromise])
+    .then(([arsip1Data, arsip2Data]) => {
+      booksData = [...arsip1Data, ...arsip2Data];
       generatePages(booksData, 3);
     })
     .catch(error => {
@@ -104,7 +104,7 @@ let currentPage = parseInt(params.get('page')) || 1;
 function goToNextPage() {
   if (currentPage < pageLinks.length) {
     currentPage++;
-    const nextPageUrl = `disposisi${currentPage}.html?page=${currentPage}`;
+    const nextPageUrl = `arsip${currentPage}.html?page=${currentPage}`;
     window.location.href = nextPageUrl;
   }
 }
@@ -125,7 +125,7 @@ function automatePagination() {
 prevBtn.addEventListener('click', () => {
   if (currentPage > 1) {
     currentPage--;
-    const prevPageUrl = `disposisi${currentPage}.html?page=${currentPage}`;
+    const prevPageUrl = `arsip${currentPage}.html?page=${currentPage}`;
     window.location.href = prevPageUrl;
   }
 });
@@ -136,7 +136,7 @@ pageLinks.forEach(link => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
     currentPage = parseInt(link.textContent);
-    const pageUrl = `disposisi${currentPage}.html?page=${currentPage}`;
+    const pageUrl = `arsip${currentPage}.html?page=${currentPage}`;
     window.location.href = pageUrl;
   });
 });
